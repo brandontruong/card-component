@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CardComponent } from './card/card.component';
-import { CardHeaderComponent } from './card/card-header.component';
-import { CardContentComponent } from './card/card-content.component';
+// import { CardHeaderComponent } from './card/card-header.component';
+// import { CardContentComponent } from './card/card-content.component';
 import { CardFooterComponent } from './card/card-footer.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     CardComponent,
-    CardHeaderComponent,
-    CardContentComponent,
+    // CardHeaderComponent,
+    // CardContentComponent,
     CardFooterComponent,
   ],
   templateUrl: './app.component.html',
