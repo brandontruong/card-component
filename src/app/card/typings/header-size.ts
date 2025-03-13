@@ -1,0 +1,1 @@
+export type HeaderSize = 'l' | 'm' | 's';

@@ -1,7 +1,19 @@
 <h1>Card component tests</h1>
 
-<app-card headline="My Headline" body="My Body" footer="My Footer"></app-card>
+<app-card
+  headerSize="l"
+  headline="My Headline size l"
+  body="My Body"
+  footer="My Footer"
+></app-card>
 
-<app-card headline="My Headline 2" footer="My Footer 2">
+<app-card
+  headerSize="m"
+  headline="My Headline size m"
+  body="My Body"
+  footer="My Footer"
+></app-card>
+
+<app-card headline="My Headline size s" footer="My Footer 2" headerSize="s">
   <h3>My Body as ng-content</h3>
 </app-card>

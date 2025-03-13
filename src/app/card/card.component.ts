@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { HeaderSize } from './typings/header-size';
 
 @Component({
   selector: 'app-card',
@@ -7,6 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
+  @Input() headerSize: HeaderSize = 'm';
   @Input() headline: string = '';
 
   @Input() body: string = '';

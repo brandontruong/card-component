@@ -1,6 +1,8 @@
 <div class="card">
   <div class="header">
-    <h2>{{ headline }}</h2>
+    <h2 [class]="`header-size-${headerSize}`">
+      {{ headline }}
+    </h2>
     <div class="ellipsis"><img src="assets/ellipsis.svg" /></div>
   </div>
   <div class="body">
