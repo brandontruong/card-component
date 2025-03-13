@@ -13,9 +13,14 @@ hr {
 
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  padding: 12px;
+  border-bottom: solid red 1px;
+  .ellipsis {
+    width: 8px;
+  }
 }
 
 .body {
