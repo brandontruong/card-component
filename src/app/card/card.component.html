@@ -1,4 +1,4 @@
-<div class="card">
+<div [class]="`card accent-${accent}`">
   <div class="header">
     <h2 [class]="`header-size-${headerSize}`">
       {{ headline }}
@@ -9,8 +9,19 @@
     <div>{{ body }}</div>
     <ng-content></ng-content>
   </div>
-  <hr />
-  <div class="footer">
-    <div>{{ footer }}</div>
-  </div>
+  <ng-content select="app-card-footer"></ng-content>
 </div>
+
+<!-- <div class="wrapper">
+  <div class="header">
+    <ng-content select="app-card-header"></ng-content>
+  </div>
+
+  <div class="content">
+    <ng-content select="app-card-content"></ng-content>
+  </div>
+
+  <div class="footer">
+    <ng-content select="app-card-footer"></ng-content>
+  </div>
+</div> -->

@@ -1,0 +1,1 @@
+export type Accent = 'info' | 'danger' | 'warning';

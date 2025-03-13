@@ -1,10 +1,21 @@
 .card {
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
   width: 50vw;
   height: 50vw;
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
+  &.accent {
+    &-info {
+      border-top: solid var(--accent-info) 4px;
+    }
+    &-danger {
+      border-top: solid var(--accent-danger) 4px;
+    }
+    &-warning {
+      border-top: solid var(--accent-warning) 4px;
+    }
+  }
 }
 
 hr {
@@ -17,16 +28,16 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  border-bottom: solid red 1px;
+  border-bottom: solid var(--border-color) 1px;
   &-size {
     &-s {
-      font-size: 12px;
+      font-size: var(--size-s);
     }
     &-m {
-      font-size: 14px;
+      font-size: var(--size-m);
     }
     &-l {
-      font-size: 16px;
+      font-size: var(--size-l);
     }
   }
   .ellipsis {
@@ -39,10 +50,4 @@ hr {
   flex-grow: 1;
   align-items: center;
   justify-content: center;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

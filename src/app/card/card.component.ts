@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { HeaderSize } from './typings/header-size';
+import { Accent } from './typings/accent';
 
 @Component({
   selector: 'app-card',
@@ -9,11 +10,9 @@ import { HeaderSize } from './typings/header-size';
 })
 export class CardComponent {
   @Input() headerSize: HeaderSize = 'm';
+  @Input() accent: Accent = 'info';
   @Input() headline: string = '';
 
   @Input() body: string = '';
-
-  @Input() footer: string = '';
-
   constructor() { }
 }

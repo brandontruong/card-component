@@ -1,19 +1,39 @@
 <h1>Card component tests</h1>
 
+<!-- <app-card>
+  <app-card-header>
+    <h3>It's a kind of header</h3>
+  </app-card-header>
+
+  <app-card-content> Yippie, here comes my content. </app-card-content>
+
+  <app-card-footer>
+    <button>Act as you want</button>
+  </app-card-footer>
+</app-card> -->
+
 <app-card
   headerSize="l"
+  accent="info"
   headline="My Headline size l"
   body="My Body"
   footer="My Footer"
-></app-card>
+>
+  <app-card-footer>
+    <div class="footer">
+      <button>Cancel</button>
+      <button class="btn-primary" (click)="saveHandler()">Save</button>
+    </div>
+  </app-card-footer></app-card
+>
 
 <app-card
   headerSize="m"
+  accent="danger"
   headline="My Headline size m"
   body="My Body"
-  footer="My Footer"
 ></app-card>
 
-<app-card headline="My Headline size s" footer="My Footer 2" headerSize="s">
+<app-card headline="My Headline size s" headerSize="s" accent="warning">
   <h3>My Body as ng-content</h3>
 </app-card>
